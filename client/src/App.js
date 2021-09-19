@@ -39,7 +39,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-       
+      
           <Provider store={store}>
             <Nav />
             <Switch>
@@ -51,7 +51,7 @@ function App() {
               <Route component={NoMatch} />
               <Route exact path="/success" component={Success} />
             </Switch>
-      
+    
           </Provider>
         </div>
       </Router>

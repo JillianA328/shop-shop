@@ -30,7 +30,6 @@ function ProductList() {
         products: data.products
       });
 
-      //but let's also take each product and save it to IndexedDB
       data.products.forEach((product) => {
         idbPromise('products', 'put', product);
       });
