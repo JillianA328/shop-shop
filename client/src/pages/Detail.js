@@ -10,7 +10,7 @@ import spinner from '../assets/spinner.gif'
 function Detail() {
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
-
+//comment here
   const [currentProduct, setCurrentProduct] = useState({})
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
